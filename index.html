@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="hero">
+            <img class="background-img" src="halie-west-25xggax4bSA-unsplash.jpg" alt="some nature pic">
+            
+            <div class="logo">
+                <img class="logo-img" src="odin-lined.png" alt="logo">
+                <p>ODIN</p>
+            </div>
+
+            <div class="hero-foot">
+                <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+            </div>
+        </div>
+    
+        <div id="main-section">
+            <div class="intro">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+                
+                <p>You <i>know</i> you want to.</p>
+            </div>
+
+            <div class="form">
+                
+                <form action="#" method="post">
+                    <div class="fields-area">
+                        <h1>Let's do this!</h1>
+
+                        <div class="fields">
+                            <div class="field">
+                                <div>
+                                    <label for="first-name">FIRST NAME</label>
+                                </div>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+    
+                            <div class="field">
+                                <div>
+                                    <label for="last-name">LAST NAME<span class="required-mark">*</span></label>
+                                </div>
+                                <input type="text" id="last-name" name="last-name" minlength="2" required>
+                            </div>
+    
+                            <div class="field">
+                                <div>
+                                    <label for="email">EMAIL<span class="required-mark">*</span></label>
+                                </div>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+    
+                            <div class="field">
+                                <div>
+                                    <label for="tel">PHONE NUMBER</label>
+                                </div>
+                                <input type="tel" id="tel" name="tel">
+                            </div>
+                            
+                            <div class="field">
+                                <div>
+                                    <label for="password">PASSWORD<span class="required-mark">*</span></label>
+                                </div>
+                                <input type="password" id="password" name="password" minlength="6" required>
+                            </div>
+    
+                            <div class="field">
+                                <div>
+                                    <label for="confirm-password">CONFIRM PASSWORD<span class="required-mark">*</span></label>
+                                </div>
+                                <input type="password" id="confirm-password" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="closing">
+                        <button type="submit" class="submit-btn">Create Account</button>
+        
+                        <a href="#">Already have an account? Log in</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

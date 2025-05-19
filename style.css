@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(converted-fonts/Norse-Bold.woff) format('woff'),
+        url(converted-fonts/Norse-Bold.woff2) format('woff2');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+body {
+    font-family: 'Norse-Bold', 'Fantasy', 'sans-serif';
+}
+
+.container {
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#hero {
+    height: 100vh;
+    width: 40%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.background-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    padding: 10px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.logo p {
+    font-size: 100px;
+    color:white;
+}
+
+.hero-foot {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom:10px;   
+}
+
+.hero-foot p {
+    color: white;
+    font-size: 15px;
+}
+
+#main-section {
+    height: 100vh;
+    width: 60%;
+    /* this two line make the scroll disappear and idk why yet */
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    padding: 140px 25px 30px;
+    background-color: lightgrey;
+    font-size: 20px;
+}
+
+.intro p {
+    margin-bottom: 25px;
+}
+
+.form {
+    height: 65%;
+}
+
+.form h1 {
+    padding: 20px 25px 10px;
+    margin-bottom: 5px;
+}
+
+.form form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form .fields-area {
+    box-shadow: 0px 5px 3px -1px rgba(0,0,0,0.3);
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 30px;
+}
+
+.fields {
+    width: 100%;
+    height: 40%;
+    padding: 5px 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.field {
+    margin: 0px 50px 20px 0px;
+    flex: 0 40%;
+}
+
+.field input {
+    border-radius: 5px;
+    border: solid 1px #E5E7EB;
+    height: 22px;
+}
+
+
+.field input:invalid {
+    border-color: red;
+}
+
+.field input:required{
+    border: solid 1px #E5E7EB;;
+}
+
+.field input:focus {
+    border: 1px solid lightblue;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.3);
+    outline: none;
+}
+
+
+.required-mark {
+    color: red;
+}
+
+form .closing {
+    height: 60%;
+    background-color: lightgrey;
+    padding: 25px 25px 0px;
+    display: flex;
+    flex-direction: column;   
+}
+
+.closing button {
+    color: white;
+    font-weight: bold;
+    background-color: #596D48;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.closing a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+
+
